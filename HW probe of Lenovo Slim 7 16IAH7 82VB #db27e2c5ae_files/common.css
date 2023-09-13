@@ -1,0 +1,1095 @@
+@font-face {
+    font-family:"Open Sans";
+    src:url("../fonts/OpenSans.ttf") format("truetype");
+}
+@font-face {
+    font-family:"VeraMono";
+    src:url("../fonts/VeraMono.ttf") format("truetype");
+}
+html {
+  scroll-padding-top: 65px; /* height of sticky header */
+}
+body {
+    color:Black;
+    text-align:justify;
+    background-color:White;
+    padding:0;
+    margin:0;
+    margin-top:5em;
+    font-family:"Open Sans";
+    font-size:110%;
+}
+p {
+    margin-top:1.4em;
+    margin-bottom:1.4em;
+    font-size:1.2em;
+}
+ul.large li {
+    margin-top:0.9em;
+    margin-bottom:0.9em;
+    font-size:1.2em;
+}
+li {
+    font-family:"Open Sans";
+}
+.markdown p {
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    font-size:1em;
+    font-family:"Open Sans";
+}
+.markdown pre {
+    white-space:pre-wrap;
+    white-space:-moz-pre-wrap;
+    white-space:-pre-wrap;
+    white-space:-o-pre-wrap;
+    word-wrap: break-word;
+}
+form.front {
+    font-size:1.2em;
+}
+hr.bottom {
+    color:#ececec;
+    background-color:#ececec;
+    height:0.14em;
+    border:0;
+    margin-bottom:1.3em;
+}
+div.top_target {
+    font-size:1.1em;
+    font-weight:bold;
+}
+div.header {
+    display:inline-block;
+    float:left;
+    vertical-align:middle;
+    padding-bottom:0.3em;
+}
+a.home {
+    text-decoration:none;
+    font-size:1.1em;
+    white-space:nowrap;
+    font-weight:bold;
+}
+div.menu {
+    display:inline-block;
+    vertical-align:middle;
+    text-align:left;
+    float:right;
+    font-weight:bold;
+    padding-top:0.3em;
+}
+div.center {
+    max-width:1080px;
+    margin:auto;
+}
+div.body {
+    padding: 0px 10px 0px 10px;
+}
+h2 {
+    text-decoration:underline;
+    padding-top:5px;
+}
+h3 {
+    margin-top:0px;
+    margin-bottom:12px;
+}
+.logo {
+    width:2em;
+    height:2em;
+    vertical-align:middle;
+    padding: 0px 3px 0px 8px;
+}
+.welcome_logo, .welcome_logo_t {
+    height:12em;
+}
+.welcome_logo_m {
+    height:8em;
+}
+.big, .big_t {
+    font-size:1.2em;
+}
+.big_m {
+    font-size:0.8em;
+}
+.welcome_logo_bsd, .welcome_logo_bsd_t {
+    height:15em;
+}
+.welcome_logo_bsd_m {
+    height:10em;
+}
+.big_button, .big_button_forum, .submit_button {
+    background-color:#4CAF50;
+    border:none;
+    color:white;
+    padding:15px 28px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-weight:bold;
+    font-family:"Open Sans";
+}
+.big_button_forum {
+    background-color:#A73958;
+}
+.submit_button {
+    padding:10px;
+    margin-right:15px;
+    font-size:1.2em;
+    height:2.5em;
+    cursor:pointer;
+}
+.disabled {
+    background-color:LightGray;
+    cursor:not-allowed
+}
+.pie {
+}
+.pie_m {
+    height:14em;
+}
+.pie_t {
+    height:18em;
+}
+.title {
+    font-size:1.2em;
+}
+table {
+    white-space:nowrap;
+}
+table.tbl td, table.mono td, .probe_id, .group_index, .listing, pre, .code, table.logs td {
+    font-family:"VeraMono", "DejaVu Sans Mono", "Monaco", "Courier New", monospace;
+}
+.group_index {
+    vertical-align:top;
+    text-align:left;
+    padding-left:20px;
+    width:100%;
+    font-size:1em;
+}
+a.group_count {
+    background-color:#FFDDDD;
+    padding:2px;
+}
+.probe_id {
+    font-size:0.95em;
+    text-align:left;
+}
+table.tbl {
+    border-collapse:collapse;
+    margin-bottom:0.31em;
+}
+table.tbl tr, table.tbl td, table.tbl th
+{
+    border:4px solid White;
+    padding:0.2em;
+    padding-left:0.44em;
+    padding-right:0.44em;
+}
+table.tbl tr, table.tbl td:first-child, table.tbl th:first-child
+{
+    border-left:0;
+}
+table.tbl th {
+    background:#D2D2D2;
+    text-align:left;
+}
+table.tbl td {
+    font-size:0.9em;
+}
+table.mono td {
+    font-size:0.9em;
+}
+.info {
+    text-decoration:none;
+    font-size:1.2em;
+}
+.no_decor {
+    text-decoration:none;
+}
+a.sel {
+    background-color:#F5F5F5;
+    color:Black;
+    padding:4px;
+}
+.found {
+    background-color:#FFDDDD;
+}
+.ok, .works, .tested, .yes, .approved, .sent, td.NORMAL {
+    background-color:#CCFFCC;
+    color:Black;
+}
+.deleted {
+    background-color:#A7B2BD;
+    color:Black;
+}
+.fixed {
+    background-color:#59BDBD;
+    color:Black;
+}
+.approval, .limited, .part, .dev_info td.need_to_test, .hold {
+    background-color:#F4F4AF;
+    color:Black;
+}
+.warn, td.CHG {
+    background-color:#FFDE75;
+    color:Black;
+}
+.warn_other {
+    background-color:#F4F4AF;
+    color:Black;
+}
+.fail, .failed, .not_supported, .no, td.FAILURE {
+    background-color:#FFCCCC;
+    color:Black;
+}
+.malfunction, .malfunc, td.DEGR, .likely_not_supported {
+    background-color:#FFCC99;
+    color:Black;
+}
+.new, .declared, .pending {
+    background-color:#C6DEFF;
+    color:Black;
+}
+.detected, .supported {
+    background-color:#C6DEFF;
+    color:Black;
+}
+.unkn, .unknown {
+    background-color:#555555;
+    color:White;
+}
+select {
+    font-size:1em;
+    padding-right:5px;
+    background-color:White;
+    border: 1px solid #A6A6A6;
+    height: 1.7em;
+}
+input.input, input.button {
+    border: 1px solid #A6A6A6;
+    height: 1.5em;
+    font-size: 0.9em;
+    padding: 0.1em;
+}
+select.periods
+{
+    width:155px;
+}
+select.formfactors
+{
+    width:175px;
+}
+select.formfactors_m
+{
+    width:120px;
+}
+select.countries
+{
+    width:140px;
+}
+.search {
+    width: 10.5em;
+}
+.search_m {
+    width: 6em;
+}
+.sys_select {
+    width:7.9em;
+    font-size:1em;
+}
+.rel_select {
+    width:7.9em;
+}
+.cselect {
+    width:10em;
+}
+.type_select {
+    width:9em;
+}
+option.selected {
+    background-color:#DDDDDD;
+}
+input.button {
+  padding: 1px 6px;
+  -webkit-border-radius: 2px 2px;
+  border: solid 1px rgb(153, 153, 153);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(rgb(221, 221, 221)));
+  background-color: #EEEEEE;
+  cursor: pointer;
+  text-align: center;
+  font-size:1em;
+  margin:2px;
+  margin-top:9px;
+}
+.button:hover {
+    border:1px solid #777777;
+}
+.narrow, .narrow2, .local_timeline, .host_info, .dev_info {
+    white-space:normal;
+}
+.narrow td {
+    max-width:14.7em;
+    word-wrap:break-word;
+}
+.narrow2 td {
+    max-width:16em;
+    word-wrap:break-word;
+}
+table.local_timeline td {
+    max-width:30em;
+    word-wrap:break-word;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.host_info td {
+    max-width:14.5em;
+    word-wrap:break-word;
+}
+.dev_info {
+    width:0%;
+}
+.dev_info td {
+    max-width:45em;
+    word-wrap:break-word;
+    height:3.5em;
+}
+.dev_info td.id {
+    min-width:13.5em;
+    max-width:13.5em;
+}
+.dev_info td.id_short {
+    min-width:7.1em;
+    max-width:7.1em;
+}
+.dev_info td.vendor {
+    max-width:7em;
+}
+.dev_info td.vendor_short {
+    max-width:6.6em;
+}
+.dev_info td.device {
+    min-width:12.9em;
+    max-width:12.9em;
+}
+.dev_info td.device_short {
+    min-width:10em;
+    max-width:10em;
+}
+.dev_info td.type {
+    max-width:7em;
+}
+.dev_info td.type_short {
+    max-width:5.5em;
+}
+.dev_info td.driver {
+    max-width:6.5em;
+}
+.dev_info td.driver_short {
+    max-width:5.2em;
+}
+.dev_list td.vendor {
+    min-width:6em;
+}
+.dev_list td.device {
+    min-width:15em;
+}
+.nowrap {
+    white-space:nowrap;
+}
+td.short_id {
+    max-width:235px;
+    word-wrap:break-word;
+}
+table.short td {
+    max-width:320px;
+    white-space:normal;
+    word-wrap:break-word;
+}
+table.dr_info td {
+    max-width:200px;
+    white-space:normal;
+    word-wrap:break-word;
+}
+td.comment {
+    max-width:230px;
+    min-width:230px;
+    word-wrap:break-word;
+    white-space:normal;
+}
+td.edit:hover {
+  background-color: #EFEFEF;
+}
+tr.edit:hover {
+  background-color: #EFEFEF;
+}
+td.model {
+    max-width:160px;
+    word-wrap:break-word;
+    white-space:normal;
+}
+.listing {
+    padding:10px;
+    border:1px solid Black;
+    width:75%;
+    font-size:1.2em;
+}
+.sort {
+    cursor:pointer;
+}
+.pointer {
+    cursor:pointer;
+}
+.error, .success, .tip, .attention {
+    font-weight:bold;
+    padding:15px;
+    font-size:1.2em;
+    max-width:30em;
+    min-width:15em;
+}
+.error {
+    color:Red;
+    background-color:#FFCCCC;
+    border:2px solid Red;
+}
+.success {
+    color:LimeGreen;
+    background-color:#D6F5D6;
+    border:2px solid LimeGreen;
+}
+.tip {
+    color:#ecba6b;
+    background-color:#fef5e7;
+    border:2px solid #f8c471;
+}
+.attention {
+    color:#ecba6b;
+    background-color:#fef5e7;
+    border:2px solid #f8c471;
+}
+.tip_m, .success_m, .error_m, .attention_m {
+    padding:7px;
+    font-size:1.1em;
+    min-width:10em;
+}
+.tip_icon, .info_icon, .error_icon, .attention_icon {
+    vertical-align:middle;
+    height:2em;
+}
+.attention_icon {
+    color:Red;
+}
+.email_icon {
+    width: 1.05em;
+}
+.menu_bars_icon {
+    width: 1.5em;
+}
+.add_icon {
+    width: 1.5em;
+}
+.comment_failed, .comment_not_supported {
+    background-color:#ffe6e6;
+    border:2px solid #FF8080;
+}
+.comment_works {
+    background-color:#E4F8E4;
+    border:2px solid LimeGreen;
+}
+.comment_fixed {
+    background-color:#C5E8E8;
+    border:2px solid #59BDBD;
+}
+.comment_malfunc, .comment_likely_not_supported {
+    background-color:#FFE6CD;
+    border:2px solid #FF795C;
+}
+.comment_detected, .comment_supported {
+    background-color:#E5F0FF;
+    border:2px solid #58B0DF;
+}
+.comment_need_to_test, .comment_limited {
+    background-color:#F4F4AF;
+    border:2px solid #eed202;
+}
+.comment_upgrade {
+    background-color:#F7F0F7;
+    border:2px solid Navy;
+}
+.comment_failed, .comment_malfunc, .comment_works, .comment_detected, .comment_supported, .comment_need_to_test, .comment_limited, .comment_not_supported, .comment_likely_not_supported, .comment_upgrade, .comment_fixed
+{
+    padding:8px;
+    color:Black;
+}
+.error {
+    color:Red;
+    background-color:#FFCCCC;
+    border:2px solid Red;
+}
+table.contents {
+    border-collapse:collapse;
+    border:1px solid Black;
+    margin-left:2px;
+}
+table.contents td, table.contents th {
+    padding:2px;
+    padding-right:10px;
+}
+#image-box {
+    height:600px;
+    width:auto;
+    position:absolute;
+    display:none;
+    border:3px solid White;
+}
+#image-view {
+    border:3px solid White;
+}
+.category {
+    font-weight:bold;
+    font-size:1em;
+}
+pre, .code {
+    margin-left:2px;
+    padding:0px 5px 0px 5px;
+    padding-left:19px;
+    font-size:0.85em;
+    border-left:2px solid #ececec;
+}
+.code {
+    white-space:pre;
+    display:block;
+    unicode-bidi:embed;
+}
+.tbl tr:nth-child(odd) {
+    background-color:#F4F4F4;
+}
+.tbl tr:nth-child(even) {
+    background-color:White;
+}
+.dr_info tr:nth-child(odd) {
+    background-color:White;
+}
+.dr_info tr:nth-child(even) {
+    background-color:#F4F4F4;
+}
+.upgrade, .highlight tr.upgrade {
+    background-color:#F4F4AF;
+    color:Black;
+}
+.installed, .highlight tr.installed {
+    background-color:#99e6cc;
+    color:Black;
+}
+.highlight tr:hover {
+    background-color:#E0E0E0;
+}
+.highlight_cell td.pointer:hover {
+    background-color:#E0E0E0;
+}
+.properties td, .properties th, .properties {
+    background-color:#fef9e7;
+}
+.properties td:hover {
+    background-color:#f1eddb;
+}
+
+.sys {
+    color:White;
+    font-weight:bold;
+}
+
+.all_sys, .linux {background-color:#205081;color:White;}
+.all_sys_bsd, .bsd {background-color:#F16E1C;color:Black;}
+.unknown {background-color:#CCCCCC;color:Black;}
+.acronis-cyber-infrastructure {background-color:#01204F;color:White;}
+.alma {background-color:#932279;color:White;}
+.alpine {background-color:#B7C8BE;color:#0D597F;}
+.alt_linux, .alt, .altlinux {background-color:#FFC80B;color:Black;}
+.android {background-color:#97C148;color:Black;}
+.antergos {background-color:#6888B9;color:White;}
+.antix {background-color:#465481;color:White;}
+.arch, .arch32, .anarchy, .archarm {background-color:#34A9DE;color:Black;}
+.archcraft {background-color:#1EB3AD;color:Black;}
+.archlabs {background-color:#444C50;color:White;}
+.archman {background-color:#C5081C;color:White;}
+.arcolinux, .arco, .archmerge {background-color:#5F8FEF;color:Black;}
+.artix {background-color:#2488A4;color:White;}
+.astralinux, .astra {background-color:#679CA5;color:Black;}
+.bgr {background-color:Green;color:White;}
+.biglinux {background-color:#5C5044;color:White;}
+.blackarch {background-color:Black;color:White;}
+.blackpanther {background-color:#B0B0B0;color:Black;}
+.blendos {background-color:#31018A;color:White;}
+.bunsenlabs {background-color:#666666;color:White;}
+.cachyos {background-color:#00AA88;color:White;}
+.calculate {background-color:#FBA222;color:White;}
+.chimeraos {background-color:#BC3B13;color:Black;}
+.chrome_os {background-color:#75A4D6;color:White;}
+.citrixhypervisor {background-color:#A54E61;color:White;}
+.clearos {background-color:#709537;color:White;}
+.clear_linux, .clear-linux-os {background-color:#7BDBC0;color:Black;}
+.cloudlinux {background-color:#336699;color:Black;}
+.cyber_infra {background-color:#01204F;color:White;}
+.debian, .raspbian {background-color:#BE013B;color:White;}
+.deepin, .uos {background-color:#0E68C0;color:White;}
+.devuan {background-color:#7B7792;color:White;}
+.draugeros {background-color:#DC3535;color:Black;}
+.elementary, .elementary-os {background-color:#5BA1D5;color:White;}
+.endeavouros {background-color:#FE7E7F;color:Black;}
+.endless {background-color:#EEA100;color:White;}
+.fedora, .novos, .generic {background-color:#072A60;color:White;}
+.feren-os {background-color:#0077D8;color:White;}
+.freedesktop {background-color:#3B80AE;color:White;}
+.garuda {background-color:#DB224E;color:White;}
+.galliumos {background-color:#5495BF;color:White;}
+.gentoo, .funtoo {background-color:#4D2A86;color:White;}
+.gnome_os {background-color:Black;color:White;}
+.gooroom {background-color:#215ACB;color:White;}
+.guix {background-color:#FF9D00;color:Black;}
+.hamonikr {background-color:#448ECC;color:Black;}
+.hefftor {background-color:#5B4875;color:White;}
+.kaisen {background-color:#AB1320;color:White;}
+.kaos {background-color:#449EDB;color:Black;}
+.kali {background-color:#527D97;color:White;}
+.kubuntu {background-color:#0079C1;color:White;}
+.kylin {background-color:#079CD7;color:Black;}
+.lede {background-color:#895501;color:White;}
+.linuxfx {background-color:#0052AB;color:#D1DFF0;}
+.lubuntu {background-color:#0068C8;color:White;}
+.mageia {background-color:#1272B1;color:White;}
+.magos {background-color:#3366CC;color:Black;}
+.makululinux, .makulu {background-color:#B36E9A;color:Black;}
+.manjaro, .manjaro-arm {background-color:#2DCC70;color:Black;}
+.maui {background-color:#01A0E1;color:White;}
+.linux_lite {background-color:#B49D7E;color:Black;}
+.linux_mint, .lmde {background-color:#87CF3F;color:Black;}
+.mx {background-color:#8EA2B4;color:Black;}
+.nitrux {background-color:Black;color:White;}
+.kde_neon, .neon {background-color:#9867A9;color:White;}
+.netrunner {background-color:#A6197A;color:White;}
+.nfs_desktop {background-color:#AB2B2A;color:White;}
+.nixos {background-color:#4F72BC;color:White;}
+.no1_linux, .no1 {background-color:#F3E223;color:Black;}
+.openmandriva, .rosa {background-color:#99DFF1;color:Black;}
+.opensuse, .opensuse-tumbleweed {background-color:#0D5148;color:White;}
+.openwrt {background-color:#C1C7C7;color:Black;}
+.oracle_linux {background-color:#CA2B41;color:#FEFFFB;}
+.parabola {background-color:#787DAB;color:White;}
+.pardus {background-color:#AD7925;color:White;}
+.parrot {background-color:#94B8C8;color:Black;}
+.pclinuxos {background-color:Black;color:White;}
+.pearos {background-color:#6D6D6D;color:White;}
+.peppermint {background-color:#D9534F;color:Black;}
+.pop_os {background-color:#48B9C7;color:Black;}
+.postmarketos {background-color:#009900;color:Black;}
+.puppy {background-color:#7D7D7D;color:Black;}
+.pureos {background-color:#404040;color:White;}
+.qts {background-color:#006476;color:White;}
+.r-virtualization {background-color:#FF3333;color:White;}
+.reborn_os {background-color:#F2F3B9;color:#2D343E;}
+.red {background-color:#294F7C;color:White;}
+.redcore {background-color:#E40032;color:Black;}
+.red_os {background-color:#E62A1E;color:Black;}
+.rels, .centos {background-color:#7E5E8F;color:White;}
+.rhel {background-color:#932929;color:White;}
+.rhcos {background-color:#4290CF;color:Black;}
+.risios {background-color:#6D0F0F;color:#F7BF2C;}
+.rocky_linux {background-color:#10B981;color:Black;}
+.sabayon {background-color:#132D77;color:White;}
+.salient_os {background-color:Black;color:White;}
+.scientific {background-color:#2C0F47;color:White;}
+.siduction {background-color:#193156;color:White;}
+.skiffos {background-color:#49C2C6;color:Black;}
+.skygate {background-color:#49424A;color:#BEBEBE;}
+.slackware {background-color:Black;color:White;}
+.sles {background-color:#33CC66;color:Black;}
+.solus {background-color:#4C5263;color:White;}
+.sparky {background-color:Black;color:White;}
+.steamos {background-color:#8068AC;color:White;}
+.trisquel {background-color:#4980C7;color:White;}
+.tuxedo {background-color:#BCA700;color:White;}
+.ubuntu, .ubuntu-core {background-color:#DD4714;color:White;}
+.ubuntu-budgie {background-color:#404552;color:White;}
+.ubuntu-mate {background-color:#87A556;color:White;}
+.ubuntu-unity {background-color:#982E6F;color:White;}
+.ubuntudde {background-color:#0097F4;color:Black;}
+.ubuntukylin {background-color:#DD4714;color:Black;}
+.ubuntustudio {background-color:#0099FF;color:Black;}
+.ultramarine {background-color:#7723EB;color:Black;}
+.viar-os {background-color:Gold;color:Black;}
+.virtuozzo, .pcs {background-color:#CB333B;color:Black;}
+.openvz {background-color:#26662E;color:White;}
+.void {background-color:#478061;color:White;}
+.xero {background-color:#2C9DD5;color:White;}
+.xubuntu {background-color:#0044AA;color:White;}
+.zorin {background-color:#3EE3BB;color:Black;}
+
+.clonos {background-color:Black;color:White;}
+.desktopbsd {background-color:#910000;color:White;}
+.dragonfly {background-color:#59D702;color:Black;}
+.freebsd {background-color:#FB5140;color:Black;}
+.freenas {background-color:#0096D6;color:Black;}
+.fuguita {background-color:#999879;color:Black;}
+.furybsd {background-color:#4169AF;color:White;}
+.ghostbsd {background-color:#00AEBF;color:Black;}
+.hardenedbsd {background-color:#0B324A;color:White;}
+.hellosystem {background-color:#4E769B;color:White;}
+.libertybsd {background-color:#996600;color:White;}
+.midnightbsd {background-color:#FBADBB;color:Black;}
+.mybee {background-color:#FCCC0A;color:Black;}
+.netbsd {background-color:#F26412;color:Black;}
+.nobara {background-color:#8D5FD3;color:Black;}
+.nomadbsd {background-color:#C57133;color:Black;}
+.openbsd {background-color:#FFF68E;color:Black;}
+.opnsense {background-color:#E25037;color:Black;}
+.os108 {background-color:#216F38;color:White;}
+.pc-bsd {background-color:#87C0D8;color:Black;}
+.pfsense {background-color:#1B1174;color:White;}
+.ting {background-color:#2DE2B5;color:Black;}
+.truenas {background-color:#1094D2;color:Black;}
+.trueos {background-color:#5D36CD;color:White;}
+.xigmanas {background-color:#D7D8DD;color:Black;}
+
+.token_access {
+    background-color:#FFCCCC;
+    padding:4px;
+}
+.ex {
+    background-color:#FFEBCD;
+}
+img.img_warn {
+    cursor:pointer;
+    width:21px;
+    /* vertical-align:middle; */
+    margin-top:3px;
+}
+img.img_info {
+    cursor:pointer;
+    width:21px;
+    /* vertical-align:middle; */
+    margin-top:3px;
+}
+img.reviewed {
+    width:23px;
+    margin-top:3px;
+}
+img.review_edited {
+    width:30px;
+    margin-left:0px;
+}
+img.found_driver {
+    width:2.2em;
+    margin-right:5px;
+}
+.popular {
+    font-weight:bold;
+}
+.imgref {
+    padding-right:10px;
+}
+.imgref_mini {
+    padding-right:4px;
+}
+.img {
+    vertical-align:top;
+}
+.sign {
+    font-size:1.1em;
+}
+.docker, .appimage, .snap, .flatpak, .debug, .duplicate, .classic, .gui, .ve, .reviewed_probe, .monitoring, .smarts {
+    padding:0 4px 0 4px;
+    color:White;
+    font-weight:bold;
+}
+.gui {
+    background-color:#BDB76B;
+}
+.classic {
+    background-color:#45b39d;
+}
+.docker {
+    background-color:#099CEC;
+}
+.appimage {
+    background-color:#8AAFC4;
+}
+.snap {
+    background-color:#CF5A2F;
+}
+.flatpak {
+    background-color:#B5A282;
+}
+.debug {
+    background-color:#FFCCCC;
+}
+.ve {
+    background-color:Purple;
+}
+.monitoring {
+    background-color:Green;
+}
+.smarts {
+    background-color:Beige;
+    color:Black;
+}
+.duplicate {
+    background-color:#FFCCCC;
+}
+.reviewed_probe {
+    background-color:#F1C40F;
+}
+a.plink {
+    text-decoration:none;
+    color:Black;
+}
+div.share_buttons {
+    margin-top:20px;
+}
+div.share_buttons img {
+    width:28px;
+    padding:4px;
+    border:0;
+    box-shadow:0;
+    display:inline;
+}
+table.tbl .invisible {
+    border-right-style:hidden;
+    border-top-style:hidden;
+    border-bottom-style:hidden;
+    background-color:White;
+}
+button.edited_button {
+    border:0;
+    background-color:White;
+    cursor:pointer;
+}
+h2.top {
+    padding-top:0px;
+}
+h2.no_padding {
+    margin-bottom:0px;
+}
+.brown {
+    color:#882803;
+    font-weight:bold;
+}
+.done {
+    font-weight:bold;
+    color:LimeGreen;
+    background-color:#d6f5d6;
+    border:2px solid LimeGreen;
+    padding:15px;
+}
+.count, .count2, .count3 {
+    margin-left:-2.5em;
+    position:relative;
+    float:left;
+    font-weight:bold;
+}
+.count2 {
+    margin-left:-3.1em;
+}
+.count3 {
+    margin-left:-3.8em;
+}
+.distro {
+    height:1.7em;
+    vertical-align:middle;
+}
+.distro_mini {
+    height:1.3em;
+    vertical-align:middle;
+}
+textarea {
+    border: 1px solid #A6A6A6;
+    font-family:"Open Sans";
+}
+textarea.review {
+    font-size:0.9em;
+}
+table.tbl td.stat_name {
+    max-width:110px;
+    white-space:normal;
+    word-wrap:break-word;
+    background-color:#d2d2d2;
+    font-weight:bold;
+}
+table.tbl td.stat_short {
+    max-width:120px;
+    min-width:120px;
+    white-space:normal;
+    word-wrap:break-word;
+}
+table.stats td {
+    max-width:180px;
+    white-space:normal;
+    word-wrap:break-word;
+}
+.color0, .color1, .color2, .color3 {
+    margin-right:5px;
+}
+.color0 {
+    background-image: linear-gradient(90deg, #3465A4, #3465A4 3px, transparent 3px, transparent);
+}
+.color1 {
+    background-image: linear-gradient(90deg, #4E9A06, #4E9A06 3px, transparent 3px, transparent);
+}
+.color2 {
+    background-image: linear-gradient(90deg, #CC0000, #CC0000 3px, transparent 3px, transparent);
+}
+.color3 {
+    background-image: linear-gradient(90deg, #EDD400, #EDD400 3px, transparent 3px, transparent);
+}
+.color4 {
+    background-image: linear-gradient(90deg, #75505B, #75505B 3px, transparent 3px, transparent);
+}
+.color5 {
+    background-image: linear-gradient(90deg, #F57900, #F57900 3px, transparent 3px, transparent);
+}
+.color6 {
+    background-image: linear-gradient(90deg, #204A87, #204A87 3px, transparent 3px, transparent);
+}
+.color7 {
+    background-image: linear-gradient(90deg, #C17D11, #C17D11 3px, transparent 3px, transparent);
+}
+table.tabs {
+    border-collapse:collapse;
+    margin:0;
+    margin-top:5px;
+}
+table.tabs tr, table.tabs td
+{
+    border-collapse:collapse;
+    padding:0px;
+    font-size:0.95em;
+    text-align:center;
+    border:0px;
+}
+table.tabs td {
+    padding:4px 4px 0px 4px;
+    color:Gray;
+    white-space:normal;
+    word-wrap:break-word;
+    vertical-align:top;
+}
+table.tabs td.left {
+    padding-left:0px;
+}
+table.tabs td.right {
+    padding-right:0px;
+}
+table.wide_tabs {
+    width:99.8%;
+}
+table.short_tabs td {
+    padding-left:15px;
+}
+table.center {
+    margin: 0 auto;
+}
+table.right {
+    margin-right: 0;
+    margin-left: auto;
+}
+table.left {
+    margin-left: 0;
+    margin-right: auto;
+}
+table.tab td {
+    cursor:pointer;
+    padding:0px;
+    padding-bottom:4px;
+    border-bottom:3px solid White;
+}
+table.tab td:hover {
+    border-bottom:3px solid Gray;
+}
+table.tab td.sel {
+    border-bottom:3px solid Gray;
+}
+table.tab td a {
+    display:block;
+}
+table.catalog td a {
+    display:block;
+}
+.trends {
+    height:25px;
+    margin-left:5px;
+}
+.download {
+    height:1.7em;
+}
+.inline_form {
+    float:left;
+    padding-right:8px;
+    padding-bottom:2px;
+}
+.quote {
+    height:22px;
+}
+object.chart {
+    float:left;
+    margin-right:1em;
+    margin-bottom:1em;
+}
+td.UNKN {
+    background-color:#999999;
+    color:Black;
+}
+.advertise, .wide_advertise {
+    border:2px solid Black;
+    vertical-align:middle;
+    border-collapse:collapse;
+}
+.advertise {
+    height:17em;
+    text-align:left;
+
+}
+.wide_advertise {
+    text-align:center;
+    width:100%;
+    margin-top:2em;
+    margin-bottom:2em;
+}
+.advertise td, .wide_advertise td {
+    padding:10px;
+    font-size:0.65em;
+    font-weight:bold;
+}
+.wide_advertise td {
+    padding:30px;
+
+}
+table.computers_list td.vendmod {
+    max-width:10em;
+    word-wrap:break-word;
+    white-space:normal;
+    text-align:left;
+}
+table.computers_list td.identity {
+    max-width:15em;
+    word-wrap:break-word;
+    white-space:normal;
+    font-size:0.55em;
+}
+.type_category
+{
+    background-color:#D2D2D2;
+    font-weight:bold;
+}
+select.dev_category
+{
+    width:7em;
+}
+a.nav, a.selected {
+    margin:7px 5px 9px 10px;
+    text-decoration:none;
+    white-space:nowrap;
+}
+div.warn404 {
+    padding-top:90px;
+    padding-bottom:70px;
+}
